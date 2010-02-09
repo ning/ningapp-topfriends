@@ -1,0 +1,164 @@
+body {
+    font-size: 12px;
+}
+
+img {
+    border: none;
+}
+
+.canvas-view {
+    width: 737px;
+    min-height: 500px;
+}
+
+.profile-view {
+    width: 492px;
+}
+
+.profile-view, .canvas-view {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.owners-only {
+    display: none !important;
+}
+
+.ui-widget-content {
+    background: none;
+}
+
+.ui-tabs {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav-close {
+    display: none;
+}
+
+.ui-tabs .ui-tabs-selected .ui-tabs-nav-close {
+    display: inline-block;
+}
+
+.ui-tabs {
+    padding: 0 0.2em;
+}
+
+.ui-tabs .ui-tabs-panel {
+    margin: 0;
+    padding: 0.2em;
+}
+
+.ui-tabs .ui-tabs-panel .ui-tabs-panel-header {
+    padding: .5em .3em .3em 1em;
+    position: relative;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-panel .ui-tabs-panel-header .title {
+    float: left;
+    margin: .1em 0 .2em;
+}
+
+.ui-tabs .ui-tabs-panel-body {
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+}
+
+.ui-tabs .ui-tabs-panel-footer {
+    text-align: left;
+    border: none;
+    background-image: none;
+    margin: .5em 0 0;
+    padding: .3em 0 0;
+}
+
+.ui-tabs .ui-tabs-panel-footer button {
+    float: right;
+    margin: .5em .4em .5em 0;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    line-height: 1.4em;
+    width: auto;
+    overflow: visible;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    margin-right:5px;
+} 
+
+.ui-dialog-titlebar-close {
+    /* hide x button in top right corner */
+    display: none;
+}
+
+.canvas-view .friend-list {
+    width: 600px;
+}
+
+.profile-view .friend-list {
+    width: 300px;
+}
+
+.friend-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.friend-list ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.friend-list ul li {
+    display: inline-block;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 10;
+    vertical-align: top;
+    position:relative;
+}
+
+.friend-list ul li div.bd {
+    position: relative; 
+    padding: 8px;
+    text-align: center;
+    width: 60px;
+    overflow: hidden;
+}
+
+.friend-list ul li .ib img {
+    width: 48px;
+    height: 48px;
+    padding-bottom: 5px;
+}
+
+.friend-list ul li .tb h3 {
+    display: block;
+    font-size 1em;
+    margin-top: 0;
+    text-align: center;
+}
+
+.friend-list ul li .ui-icon-close {
+    visibility: hidden;
+    background-color:white;
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+.friend-list ul li:hover .ui-icon-close {
+    visibility: visible;
+    margin-right:16px;
+    margin-top:10px;
+}
+
+.head, .content, .foot {
+    display: block;
+}
+

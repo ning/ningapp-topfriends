@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module xmlns:ning="http://developer.ning.com/opensocial/">
+    <ModulePrefs title="Top Friends"
+        author="Ning, Inc." 
+        author_affiliation="Ning, Inc." 
+        author_email="ninghelp@ning.com" 
+        author_location="" 
+        description="Show off your top friends, or create new tabs to organize your friends by category."
+        directory_title="Top Friends"
+        screenshot="http://os.ning.com/ningapps/topfriends/images/screenshot_topfriends.jpg"
+        thumbnail="http://os.ning.com/ningapps/topfriends/images/thumb_topfriends.jpg"
+        title_url="" 
+        >
+        <Require feature="opensocial-0.8" />
+        <Require feature="dynamic-height" />
+        <Require feature="views" />
+        <Require feature="skins"/>
+		<ning:screenshot view="ning.main">http://os.ning.com/ningapps/topfriends/images/TopFriends-ProfileView.jpg</ning:screenshot>
+    </ModulePrefs>
+<Content type="html" view="profile, canvas">
+<![CDATA[
+<style type="text/css">
+include(`style.min.css')
+</style>
+
+<script  type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+    google.load("jqueryui", "1.7.2");
+</script>
+
+<script type="text/javascript">
+include(`tf.min.js')
+</script>
+
+]]>
+</Content>
+
+<Content type="html" view="canvas">
+<![CDATA[
+<!-- 737px -->
+<div class="canvas-view">
+    <div id="tabs">
+        <ul>
+            <li class="disabled owners-only"><a href="#add" class="owners-only"><span>+</span></a></li>
+        </ul>
+        <div id="add">
+            <p>Add a tab. This space left intentionally blank.</p>
+        </div>
+    </div>
+</div>
+
+<div id="friend-dialog" title="Select a Friend">
+    <div class="header"></div>
+    <div class="friend-list">
+        <ul>
+         </ul>
+    </div>
+</div>
+
+<div id="save-dialog" title="Save Complete">
+    <p>Click Ok to close</p>
+</div>
+
+<script type="text/javascript">
+function init() {
+    NING.skinning.updateCSS();
+    TopFriends.Friends.verifyOwner();
+    TopFriends.init();
+    gadgets.window.adjustHeight();
+}
+gadgets.util.registerOnLoadHandler(function() { init(); });
+</script>
+]]>
+</Content>
+
+<Content type="html" view="profile">
+<![CDATA[
+<!-- 492px -->
+<div class="profile-view">
+    <div id="tabs">
+        <ul>
+            <li class="disabled owners-only"><a href="#add" class="owners-only"><span>+</span></a></li>
+        </ul>
+        <div id="add">
+            <p>Add a tab. This space left intentionally blank.</p>
+        </div>
+    </div>
+</div>
+
+<div id="friend-dialog" title="Select a Friend">
+    <div class="header"></div>
+    <div class="friend-list">
+        <ul>
+         </ul>
+    </div>
+</div>
+
+<div id="save-dialog" title="Save Complete">
+    <p>Click Ok to close</p>
+</div>
+
+<script type="text/javascript">
+function init() {
+    NING.skinning.updateCSS();
+    TopFriends.init();
+    gadgets.window.adjustHeight();
+}
+gadgets.util.registerOnLoadHandler(function() { init(); });
+</script>
+]]>
+</Content>
+
+<Content type="html" view="about">
+<![CDATA[
+<!-- Screenshot width: 502px Screenshot maximum height: 1000px -->
+]]>
+</Content>
+
+</Module>
+
