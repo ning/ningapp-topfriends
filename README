@@ -1,0 +1,52 @@
+
+INTRODUCTION
+
+The Top Friends Ning App show off your top friends, or creates new tabs to 
+organize your friends by category using XML, CSS and Javascript, and was 
+specifically built to be run as a Ning App for Ning Networks. 
+(http://www.ning.com)
+
+This Ning App is available under an Apache 2.0 License, as a way to 
+reach out to the developer community as well as show examples of best 
+practices of OpenSocial based applications that are used internally 
+within Ning.
+
+FILE DESCRIPTIONS
+
+ * LICENSE - contains the Apache 2.0 License
+ * README - The file you're reading right now
+ * Makefile
+ * css/
+ * gadget.m4.xml
+ * gadget.xml
+ * images/
+ * style.min.css
+ * tf.js
+ * tf.min.js
+
+INSTALLING THE NING APP TO A LOCAL SERVER FOR DEVELOPMENT
+
+git://github.com/ning/ningapp-topfriends.git
+
+After cloning the repository, you may copy the code to your own server and 
+add the gadget.xml file to a test Ning Network by URL. As the Javascript and 
+CSS in the gadget.xml has been optimized using Google's Closure Compiler 
+Service (http://closure-compiler.appspot.com/home), feel free to refer to 
+css/style.css and tf.js for the uncompressed CSS and Javascript code, 
+respectively.
+
+To add a Ning App by URL, use the following URL structure:
+http://YOURNINGNETWORKNAMEHERE.ning.com/opensocial/ningapps/addByUrl
+
+For Ning Apps documentation, usage, and examples, see:
+http://developer.ning.com/notes/Ning_Apps_Documentation
+
+HOW TO CONTRIBUTE
+
+If you are a Ning Network Creator having difficulties installing the Top 
+Friends Ning App:
+- File a ticket to the Ning Help Center (http://help.ning.com)
+
+If you are a Developer and notice a bug or an issue directly related to the 
+code in this repository:
+- http://github.com/ning/ningapp-topfriends/issues
